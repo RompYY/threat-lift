@@ -1,6 +1,6 @@
 {
-  "name": "Lift Level",
-  "short_name": "Lift Level",
+  "name": "Threat Lift",
+  "short_name": "Threat Lift",
   "description": "A private, gamified workout tracker.",
   "start_url": "./index.html",
   "scope": "./",

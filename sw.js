@@ -1,4 +1,4 @@
-const CACHE_NAME = 'lift-level-v2';
+const CACHE_NAME = 'threat-lift-v3';
 const APP_SHELL = [
   './',
   './index.html',

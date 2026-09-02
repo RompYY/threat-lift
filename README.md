@@ -1,4 +1,4 @@
-# Lift Level
+# Threat Lift
 
 A private, gamified workout tracker — dark black/purple theme, XP & levels, PR logging, weight tracking, and a 6-day training split (Mon–Sat, Sun rest). Everything is stored locally on your device — no accounts, no servers, no syncing.
 
@@ -26,22 +26,22 @@ The first 90 days are tracked as a "habit-building" phase (shown on your Profile
 
 ## Deploying to GitHub Pages
 
-1. **Create a new repository** on GitHub (e.g. `lift-level`). It can be public or private — Pages works with either (private repos need GitHub Pro/Team/Enterprise, or make it public since there's no personal data in the code itself, only in your local browser storage).
+1. **Create a new repository** on GitHub (any name you like — `threat-lift`, or keep whatever you already used, renaming the repo itself is optional and doesn't affect the app). It can be public or private — Pages works with either (private repos need GitHub Pro/Team/Enterprise, or make it public since there's no personal data in the code itself, only in your local browser storage).
 2. **Upload these files** to the repo root (`index.html`, `styles.css`, `data.js`, `app.js`, `manifest.json`, `sw.js`, and the `icons/` folder). Easiest way:
    - On GitHub, click **Add file → Upload files**, drag in everything, and commit.
    - Or, if you use git locally:
      ```bash
-     cd lift-level
+     cd threat-lift
      git init
      git add .
      git commit -m "Initial commit"
      git branch -M main
-     git remote add origin https://github.com/<your-username>/lift-level.git
+     git remote add origin https://github.com/<your-username>/<repo-name>.git
      git push -u origin main
      ```
 3. **Enable Pages**: In the repo, go to **Settings → Pages**. Under "Build and deployment", set **Source** to `Deploy from a branch`, branch `main`, folder `/ (root)`. Save.
 4. Wait a minute or two, then your app will be live at:
-   `https://<your-username>.github.io/lift-level/`
+   `https://<your-username>.github.io/<repo-name>/`
 5. **Install it on your phone**: open that URL in Safari (iOS) or Chrome (Android), then use "Add to Home Screen". It'll behave like a real app — its own icon, full-screen, and it works offline after the first load.
 
 ## Updating later

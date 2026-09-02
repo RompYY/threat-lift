@@ -1,5 +1,5 @@
 // ============================================================
-// LIFT LEVEL — workout data
+// THREAT LIFT — workout data
 // Days are keyed 1–7 (Mon–Sun) to match ISO weekday numbering.
 // ============================================================
 

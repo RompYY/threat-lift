@@ -46,7 +46,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 16px 12px;
+  padding: calc(18px + env(safe-area-inset-top)) 16px 12px;
   position: sticky;
   top: 0;
   z-index: 5;

@@ -1,6 +1,8 @@
 // ============================================================
-// LIFT LEVEL — app logic
+// THREAT LIFT — app logic
 // All state lives in localStorage under STORAGE_KEY. No network.
+// NOTE: STORAGE_KEY is intentionally left unchanged from earlier builds so
+// existing saved data (XP, logs, PRs, weight) keeps loading after a rebrand.
 // ============================================================
 
 const STORAGE_KEY = 'liftlevel_state_v1';
@@ -343,7 +345,7 @@ function exportData(weekKeyToMark) {
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
-  a.download = `liftlevel-backup-${todayISO()}.json`;
+  a.download = `threatlift-backup-${todayISO()}.json`;
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
@@ -434,7 +436,7 @@ function renderHeader() {
   header.innerHTML = `
     <div class="brand">
       <span class="brand-mark">⚡</span>
-      <span class="brand-name">LIFT LEVEL</span>
+      <span class="brand-name">THREAT LIFT</span>
     </div>
     <div class="level-pill" title="${li.xpIntoLevel} / ${li.xpForNextLevel} XP to next level">
       <span class="level-num">Lv.${li.level}</span>
